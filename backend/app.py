@@ -222,7 +222,8 @@ def settings_put():
     sim.apply_control()
     return jsonify(db.get_settings())
 
+db.init_db()
+sim.start()
+
 if __name__ == "__main__":
-    db.init_db()
-    sim.start()
     app.run(host="127.0.0.1", port=5000, debug=False, threaded=True)
