@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-brand-soft text-gray-800 font-sans antialiased; }
+.input { @apply w-full rounded-xl border border-gray-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand/40; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition disabled:opacity-50; }
+.btn-primary { @apply btn bg-brand text-white hover:bg-brand-dark; }
+.btn-ghost { @apply btn bg-white border border-gray-200 text-gray-700 hover:bg-brand-light; }
+.btn-danger { @apply btn bg-red-50 text-red-700 hover:bg-red-100; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
